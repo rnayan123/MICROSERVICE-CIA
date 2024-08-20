@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  add-movie:
+    build: ./add-movie
+    ports:
+      - "3001:3000"
+  
+  delete-movie:
+    build: ./delete-movie
+    ports:
+      - "3004:3000"
+  
+  read-movie:
+    build: ./read-movie
+    ports:
+      - "3003:3000"
+  
+  update-movie:
+    build: ./update-movie
+    ports:
+      - "3002:3000"
